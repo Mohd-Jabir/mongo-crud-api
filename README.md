@@ -24,11 +24,19 @@ A simple RESTful API built with **Express.js**, **MongoDB**, and **Mongoose** to
 
 ## 📁 Project Structure
 mongo-crud-api/
+
 ├── models/
+
 │ └── userModel.js
+
 ├── db.js
+
 ├── server.js
+
 ├── users.js
+
 ├── package.json
+
 ├── package-lock.json
+
 └── .gitignore
