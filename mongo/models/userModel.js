@@ -1,22 +1,20 @@
+const {Schema,model}=require('mongoose');
 
-const { Schema, model } = require('mongoose');
 const UserSchema = new Schema({
-    name: {
-        type: String,
-        required: true,
-        maxlength: 50
+    name:{ 
+        type: String, required: true, maxlength: 50 
     },
-    age: {
-        type: Number,
-        required: true
+    age:{ 
+        type: Number, required: true 
     },
-    weight: {
-        type: Number
+    weight:{ 
+        type: Number 
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    }
+    createdAt:{
+         type: Date, default: Date.now
+         }
+}, {
+    collection: 'MyUsers' 
 });
 
 const UserModel = model("User", UserSchema);
